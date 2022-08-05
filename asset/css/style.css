@@ -79,7 +79,8 @@
 
 .footer__section-info,
 .footer__section-content {
-
+    display: inline-block;
+    width: 33.33vw;
 }
 
 
