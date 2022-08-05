@@ -1,10 +1,11 @@
-*{
+*{/* Задал параметры которые применяться ко всей страничке */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
+
+:root {/*в руте задал цвета которые будут использоваться и базовые пораметры*/
     --brown-color:#926239;
     --white-color:#FFFFFF;
     --grey-сolor:#f4f4f4;
@@ -13,13 +14,14 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.text-overflow {
+
+.text-overflow { /* текст в одну строчку при сужении 3 точки */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.header {
+.header { /* блок головы */
     height: 914px;
     padding: 376px 20px 0 20px ;
     background-image:url(../images/beachshowcase.jpeg) ;
@@ -30,16 +32,17 @@
     color: var(--brown-color);
 }
 
-.header__title {
+.header__title { /* заголовок */
     font-size: 50px;
     line-height: 1.2em;
 }
 
-.header__subtitle {
+.header__subtitle { /* подзаголовок */
     font-size: 20px;
     font-weight: 200;
 }
 
+ /* кнопку сделал дивом что бы не уберать базовые стили с       семантического блока button */
 .header__button {
     display: inline-block;
     max-width: 150px;
@@ -50,11 +53,10 @@
     font-size: 18px;
 }
 
-
-.main {
+.main { /* центральный блок сайта */
     text-align: center;
 }
-
+/* что бы не записывать несколько раз отступы блокам  */
 .main__section-info,
 .main__section-content,
 .footer__section-info,
@@ -76,7 +78,7 @@
 .footer__section-content {
     color: var(--brown-color);
 }
-
+/* задал размеры 3м блокам подвала относительно вью портом */
 .footer__section-info,
 .footer__section-content {
     display: inline-block;
