@@ -6,7 +6,9 @@
 
 :root {
     --brown-color:#926239;
-    --whit-color:#f4f4f4;
+    --white-color:#FFFFFF;
+    --grey-сolor:#f4f4f4;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .text-overflow {
@@ -23,7 +25,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: var(--brown-color);
 }
 
@@ -47,3 +48,37 @@
     border-radius: 10px;
     font-size: 18px;
 }
+
+.main,
+.footer {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.main {
+    text-align: center;
+}
+
+.main__section-info,
+.main__section-content,
+.footer__section-info,
+.footer__section-content {
+    padding: 20px;
+}
+
+.main__section-info,
+.footer__section-info {
+    color: var(--white-color);
+    background-color:var(--brown-color) ;
+}
+
+.main__section-content {
+    background-color: var(--grey-сolor);
+}
+
+.main__section-content,
+.footer__section-content {
+    color: var(--brown-color);
+}
+
+
